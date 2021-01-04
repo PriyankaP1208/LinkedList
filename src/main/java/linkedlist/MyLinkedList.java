@@ -60,4 +60,10 @@ public class MyLinkedList<K extends Comparable<K>> {
         myNode.setNext(newNode);
         newNode.setNext(tempNode);
     }
+    public INode pop()
+    {
+        INode tempNode=this.head;
+        this.head=head.getNext();
+        return tempNode;
+    }
 }
